@@ -1,7 +1,10 @@
 import Head from 'next/head'
 
+// styles
+import { Container } from './styles'
+
 // components
-import Header from '../components/index'
+import Card from '../components/Card/index'
 
 export default function Home () {
   return (
@@ -11,9 +14,12 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
-      <h1>home</h1>
+      <Container>
+        <img src="/covid.png" className="covidLogoTop" />
+        <img src="/covid.png" className="covidLogoBottom" />
+        <h1>Covid in real time</h1>
+        <Card />
+      </Container>
 
     </>
   )
