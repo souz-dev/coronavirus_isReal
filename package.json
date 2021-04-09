@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "10.1.3",
@@ -13,11 +14,83 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "commitizen": "^4.2.3",
+    "commitlint": "^12.1.1",
+    "commitlint-config-gitmoji": "^2.2.3",
+    "cz-emoji": "^1.3.1",
     "eslint": "^7.23.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.23.1"
+    "eslint-plugin-react": "^7.23.2",
+    "typescript": "^4.2.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    },
+    "cz-emoji": {
+      "skipQuestions": [
+        "breaking",
+        "issues"
+      ],
+      "symbol": true,
+      "types": [
+        {
+          "emoji": "📦",
+          "code": ":package:",
+          "description": "Um novo recurso.",
+          "name": "feat"
+        },
+        {
+          "emoji": "🐛",
+          "code": ":bug:",
+          "description": "Uma correção de bug.",
+          "name": "fix"
+        },
+        {
+          "emoji": "📝",
+          "code": ":memo:",
+          "description": "Mudanças na documentação.",
+          "name": "docs"
+        },
+        {
+          "emoji": "✨",
+          "code": ":sparkles:",
+          "description": "Mudanças que não afetam o significado do código.",
+          "name": "style"
+        },
+        {
+          "emoji": "♻️",
+          "code": ":recycle:",
+          "description": "Uma mudança de código que não corrige um bug nem adiciona um recurso.",
+          "name": "refactor"
+        },
+        {
+          "emoji": "⚡️",
+          "code": ":zap:",
+          "description": "Uma mudança de código que melhora o desempenho.",
+          "name": "perf"
+        },
+        {
+          "emoji": "✅",
+          "code": ":white_check_mark:",
+          "description": "Adicionando testes ausentes.",
+          "name": "test"
+        },
+        {
+          "emoji": "📌",
+          "code": ":pushpin:",
+          "description": "Mudanças no processo de construção ou ferramentas auxiliares e bibliotecas, como geração de documentação.",
+          "name": "chore"
+        }
+      ]
+    }
   }
 }
