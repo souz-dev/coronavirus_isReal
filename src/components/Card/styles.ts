@@ -11,6 +11,7 @@ export const Container = styled.main`
   padding: 0 5%;
   margin: 15px 0 0;
   width: 100%;
+  max-width: 966px;
   z-index: 9;
 
   > a {

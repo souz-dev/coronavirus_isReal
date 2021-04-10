@@ -31,14 +31,7 @@ export default function Card () {
         </div>
       </a>
 
-      <a href="#">
-        <h2>Vaccinated</h2>
-        <span></span>
-        <div className="card">
-          <UserDeath />
-          <span className="value">13124241532</span>
-        </div>
-      </a>
+
     </Container>
   )
 }

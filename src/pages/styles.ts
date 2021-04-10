@@ -32,4 +32,15 @@ export const Container = styled.section`
     text-transform: uppercase;
     z-index: 9;
   }
+  > .main {
+    width: 100%;
+    max-width: 966px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
 `
